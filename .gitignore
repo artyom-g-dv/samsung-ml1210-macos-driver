@@ -9,3 +9,4 @@ gdevgdi.c
 
 .DS_Store
 driver/samsunggdi
+driver/out/
