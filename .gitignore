@@ -1,0 +1,11 @@
+# dev artifacts / reference material (not part of the repo)
+.context/
+extracted/
+cab/
+spdb/
+gdevgdi.c
+*.exe
+*.gdi
+
+.DS_Store
+driver/samsunggdi
