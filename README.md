@@ -11,13 +11,21 @@ is a port of Samsung's `gdevgdi.c` Ghostscript device (GPL).
 
 ## Install
 
-**Easy way:** download `SamsungML1210Driver-*.pkg` from
-[Releases](../../releases), open it, follow the installer. The package is
-unsigned, so macOS may warn — right-click → Open, or:
+**One-liner (Homebrew):**
 
 ```sh
-sudo installer -pkg SamsungML1210Driver-1.0.0.pkg -target /
+brew install --cask artyom-g-dv/tap/samsung-ml1210
 ```
+
+**One-liner (no Homebrew):**
+
+```sh
+curl -fsSLo /tmp/ml1210.pkg https://github.com/artyom-g-dv/samsung-ml1210-macos-driver/releases/download/v1.0.0/SamsungML1210Driver-1.0.0.pkg && sudo installer -pkg /tmp/ml1210.pkg -target /
+```
+
+**Manual:** download `SamsungML1210Driver-*.pkg` from
+[Releases](../../releases) and open it. The package is unsigned, so macOS
+may warn — right-click → Open.
 
 The installer drops the filter + PPD and creates the `ML-1210` queue
 whenever the printer is plugged into USB.
